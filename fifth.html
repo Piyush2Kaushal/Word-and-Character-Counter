@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word and character counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            padding: 10vh;
+        }
+        h1{
+            color: rgb(21, 166, 169);
+            text-align: center;
+            background-color: white;
+            font-size: 3rem;
+            font-family: 'Kalam', cursive;
+            border: 2px solid rgb(21, 166, 169);
+            
+        }
+        p{
+            font-size: 1.6rem;
+            color: rgb(21, 166, 169);
+        }
+       
+        textarea{
+            width: 99.3%;
+            border: 2px solid rgb(21, 166, 169);
+            font-size: 22px;
+        }
+        span{
+            margin-right: 20%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word and Character Counter</h1>
+    <div class="box">
+    <textarea name="para" id="area"  rows="10" placeholder="Enter Your words......."></textarea>
+    <P>Character : <span id="alpha">0</span>
+    Word: <span id="word">0</span></P>
+    </div>
+
+    
+
+    <script>
+        let area = document.getElementById("area");
+        area.addEventListener("input",function(){
+            let sto = this.value;
+            let stor = sto.length;
+            let alpha = document.getElementById("alpha").innerHTML = stor;
+
+            sto = sto.trim();
+            let store = sto.split(" ");
+
+            let clean = store.filter(function(ele){
+                return ele != "";
+            });
+            let word = document.getElementById("word").innerHTML = clean.length;
+        });
+    </script>
+</body>
+</html>

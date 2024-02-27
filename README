@@ -1,0 +1,12 @@
+# Word and Character Counter <br>
+This project is a simple web application that allows users to count the number of words and characters in a text input. It was built using HTML, CSS, and JavaScript as a practice project to improve my front-end development skills and learn about string manipulation in JavaScript.
+<br><br>
+<h2>Features </h2>
+Counts the number of words in the input text. <br>
+Counts the number of characters in the input text, including spaces.<br>
+Provides instant feedback as the user types, updating the counts in real-time.<br>
+<br><br>
+<h2>How to Use</h2>
+Open the Word and Character Counter in a web browser.<br>
+Enter or paste your text into the input field.<br>
+The number of words and characters will be displayed automatically as you type.<br>
